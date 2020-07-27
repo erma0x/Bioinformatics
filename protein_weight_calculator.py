@@ -30,4 +30,5 @@ FASTA_string = """>1BA4:A|PDBID|CHAIN|SEQUEN
 DAEFRHDSGYEVHHQKLVFFAEDVGSNKGAIIGLMVGGVVVVVV"""
 
 sum=fasta_weigth(FASTA_string)
+print(sum)
     
