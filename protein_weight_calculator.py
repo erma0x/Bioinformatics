@@ -1,5 +1,5 @@
 
-# Return the sum of the weights in KDa 
+# Return the sum of the weights in Da 
 # of the FASTA protein. 
 # Do not use for multiple 
 # sequences in the same file
@@ -35,7 +35,7 @@ def fasta_weigth(fasta_string):
                     if W[0].upper() == letter_fasta: # if letter in Dictionary
                         sum_ = sum_ + W[1]
     sum_=round(sum_)
-    print(' protein weight : {0} KDa'.format(sum_))                            
+    print(' protein weight : {0} Da'.format(sum_))                            
     
 fasta_weigth(FASTA_string)
     
