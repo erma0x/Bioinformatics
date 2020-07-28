@@ -1,4 +1,17 @@
-# Return the sum of the weights 
+
+# Return the sum of the weights in KDa 
+# of the FASTA protein. 
+# Do not use for multiple 
+# sequences in the same file
+
+import argparse
+import fileinput
+
+parser = argparse.ArgumentParser()
+parser.add_argument('file', type=argparse.FileType('r'))
+args = parser.parse_args()
+
+FASTA_string=args.file.readlines()
 
 def fasta_weigth(fasta_string):
     
@@ -11,24 +24,18 @@ def fasta_weigth(fasta_string):
     "S":  73.0, "T":  93.0, "V": 105.0,
     "W": 163.0, "Y": 141.0}
     
-    sum=0
-
-    fasta_modified=fasta_string.split()
-    fasta_modified=list(fasta_modified[1])
+    sum_=0
     
-    weights = list(weight.items())
+    for row in fasta_string: 
+    	if '>' in row: # without index
+    		pass
+    	else:             
+            for letter_fasta in row: # for each letter in FASTA row
+                for W in weight.items(): # for each items in dictionary weight
+                    if W[0].upper() == letter_fasta: # if letter in Dictionary
+                        sum_ = sum_ + W[1]
+    sum_=round(sum_)
+    print(' protein weight : {0} KDa'.format(sum_))                            
     
-    for Win weights:
-        for letter in fasta_modified:
-            if W[0] == letter :
-                sum = sum + W[1]
-                
-    return(sum)
-
-
-FASTA_string = """>1BA4:A|PDBID|CHAIN|SEQUEN
-DAEFRHDSGYEVHHQKLVFFAEDVGSNKGAIIGLMVGGVVVVVV"""
-
-sum=fasta_weigth(FASTA_string)
-print(sum)
+fasta_weigth(FASTA_string)
     
