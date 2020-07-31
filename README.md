@@ -1,10 +1,10 @@
 # Bioinformatics-tools
 
 Requisites:
+
+
 -python3
--pip
-  -argparse
-  -fileinput
+-fileinput
 
 Example usage in terminal:
 $ python3 single_seq_fasta_weight.py gfp.txt
