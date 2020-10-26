@@ -9,7 +9,7 @@
 
 Example usage in terminal:
 
->>> _python3 single_seq_fasta_weight.py gfp.txt_
+ _python3 single_seq_fasta_weight.py gfp.txt_
 
 
 
