@@ -3,9 +3,9 @@
 ## Fasta-weight calculator
 
 ### Requisites:
+  - python3
+  - fileinput .fasta
 
--python3
--fileinput .fasta
 
 Example usage in terminal:
 $ python3 single_seq_fasta_weight.py gfp.txt
