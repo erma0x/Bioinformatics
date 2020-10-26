@@ -1,7 +1,8 @@
 # Bioinformatics-tools 
-# Fasta-weight calculator
 
-Requisites:
+## Fasta-weight calculator
+
+### Requisites:
 
 -python3
 -fileinput .fasta
