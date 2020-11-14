@@ -26,3 +26,19 @@ Proteins are large biomolecules, or macromolecules, consisting of one or more lo
     V    99.06841
     W    186.07931
     Y    163.06333
+
+
+
+### Requisites:
+  - python3
+  - fileinput .fasta
+
+
+Example usage in terminal:
+
+ _python3 single_seq_fasta_weight.py gfp.txt_
+
+
+
+The script take input of FASTA file with only 1 sequence 
+and return the weight of that sequence.
