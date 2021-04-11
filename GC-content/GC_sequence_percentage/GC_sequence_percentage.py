@@ -1,4 +1,5 @@
-# calculate GC content in Rosalind format
+# calculate %GC content for the Rosalind challenge format
+#
 
 def openfile():
     import sys 
